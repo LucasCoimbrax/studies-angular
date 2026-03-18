@@ -1,0 +1,26 @@
+<h1> {{ minhaPropsDeFora }} </h1>
+
+<p> Hello World! </p>
+
+<!-- id={{idButton}} para trazer alguma variável do home.ts -->
+<button id={{idButton}}> Button 1 </button>
+
+<!-- Utilizo o attr para imprimir um valor que não seja padrão, com isso conseguimos trazer a variavel ariaLabel da home.ts para esse atributo -->
+<button [attr.aria-lable]="ariaLabel"> Button 2 </button> 
+
+<!-- Coloco o click entre () para informar que o onSubmit é uma função -->
+ <!-- $event envia para o onSubmit os valores desejados -->
+<button (click)="onSubmit($event)"> Clique </button>
+
+<!-- Utiliza os services para passar os dados e chamar a function -->
+<button (click)="submit()"> Clique </button>
+
+@if(isShowTitle){
+    <h1> Mostrar Titulo! </h1>
+} @else{
+    <h1> Não mostrar nada! </h1>
+}
+
+@for(item of listItems; track item){
+    <p> {{item}} </p>
+}
