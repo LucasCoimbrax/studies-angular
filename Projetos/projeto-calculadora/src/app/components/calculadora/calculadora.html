@@ -1,0 +1,43 @@
+<input />
+
+<div>
+  <button id="button-7" (click)="setVariable(7)">7</button>
+  <button id="button-8" (click)="setVariable(8)">8</button>
+  <button id="button-9" (click)="setVariable(9)">9</button>
+</div>
+<div>
+  <button id="button-4" (click)="setVariable(4)">4</button>
+  <button id="button-5" (click)="setVariable(5)">5</button>
+  <button id="button-6" (click)="setVariable(6)">6</button>
+</div>
+<div>
+  <button id="button-1" (click)="setVariable(1)">1</button>
+  <button id="button-2" (click)="setVariable(2)">2</button>
+  <button id="button-3" (click)="setVariable(3)">3</button>
+</div>
+<div>
+    <button id="button-clear" (click)="resetValues()"> Limpar valores </button>
+</div>
+<div>
+    <button id="button-result" (click)="calcularResult()"> Calcular </button>
+</div>
+
+<p> Operações </p>
+<div>
+    <button id="button-sum" (click)="setOperation('+')"> + </button>
+    <button id="button-div" (click)="setOperation('/')"> / </button>
+    <button id="button-subt" (click)="setOperation('-')"> - </button>
+    <button id="button-mult" (click)="setOperation('*')"> * </button>
+</div>
+
+<div>
+    <p> O valor 1 é {{value_1}} </p>
+</div>
+<div>
+    <p> O valor 2 é {{value_2}} </p>
+</div>
+
+<div>
+    <p> O valor da conta {{value_1}} {{operation}} {{value_2}} = {{result}}</p>
+</div>
+
