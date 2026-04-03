@@ -1,0 +1,14 @@
+.container-main{
+    display: flex;
+}
+
+.container-header-home{
+    width: 240px;
+    background-color: rebeccapurple;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}

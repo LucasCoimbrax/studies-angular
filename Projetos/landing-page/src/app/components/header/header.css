@@ -1,0 +1,12 @@
+.container-option{
+    display: flex;
+    align-items: center;
+
+    padding: 0px 1rem ;
+
+    background-color: blue;
+}
+
+.container-p-space{
+    padding-left: 16px;
+}
